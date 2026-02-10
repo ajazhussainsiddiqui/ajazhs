@@ -1,0 +1,104 @@
+
+{
+  "entities": {
+    "Page": {
+      "title": "Page",
+      "description": "Represents a page in the portfolio.",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The title of the page."
+        },
+        "layout": {
+          "type": "string",
+          "description": "The layout of the page.",
+          "enum": ["single", "two-column", "three-column", "four-column", "five-column", "six-column", "grid", "masonry"]
+        },
+        "columnLayout": {
+          "type": "array",
+          "description": "The layout of columns in percentages.",
+          "items": {
+            "type": "number"
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp for ordering pages."
+        },
+        "order": {
+          "type": "number",
+          "description": "The display order of the page section."
+        }
+      },
+      "required": ["layout"]
+    },
+    "ContentBlock": {
+      "title": "Content Block",
+      "description": "A block of content on a page.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["text", "spacer"]
+        },
+        "order": {
+          "type": "number",
+          "description": "The order of the block on the page."
+        },
+        "column": {
+            "type": "number",
+            "description": "The column number for multi-column layouts."
+        },
+        "content": {
+          "type": "string",
+          "description": "Markdown content for text blocks."
+        },
+        "height": {
+          "type": "number",
+          "description": "Height for spacer blocks in pixels."
+        },
+        "className": {
+          "type": "string",
+          "description": "Custom Tailwind CSS classes for styling the block."
+        }
+      },
+      "required": ["type", "order"]
+    },
+    "Message": {
+      "title": "Message",
+      "description": "A contact message from a user.",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["message"]
+    }
+  },
+  "auth": {
+    "providers": ["password"]
+  },
+  "firestore": {
+    "/pages/{pageId}": {
+      "schema": {
+        "$ref": "#/entities/Page"
+      },
+      "description": "Stores page configurations."
+    },
+    "/pages/{pageId}/blocks/{blockId}": {
+      "schema": {
+        "$ref": "#/entities/ContentBlock"
+      },
+      "description": "Stores the content blocks for a specific page."
+    },
+    "/messages/{messageId}": {
+      "schema": {
+        "$ref": "#/entities/Message"
+      },
+      "description": "Stores contact messages."
+    }
+  }
+}

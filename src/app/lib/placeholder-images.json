@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "id": "hero-bg",
+      "url": "https://picsum.photos/seed/portfolio-hero/1920/1080",
+      "width": 1920,
+      "height": 1080,
+      "alt": "Abstract technology background",
+      "hint": "technology abstract"
+    },
+    {
+      "id": "profile-pic",
+      "url": "https://picsum.photos/seed/ajaz-hussain/400/400",
+      "width": 400,
+      "height": 400,
+      "alt": "Ajaz Hussain Siddiqui profile picture",
+      "hint": "professional man"
+    },
+    {
+      "id": "project-card",
+      "url": "https://picsum.photos/seed/project-preview/800/600",
+      "width": 800,
+      "height": 600,
+      "alt": "AI Project preview",
+      "hint": "ai computer"
+    }
+  ]
+}

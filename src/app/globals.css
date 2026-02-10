@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 20% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+    --primary: 215 30% 45%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 210 10% 90%;
+    --secondary-foreground: 215 30% 45%;
+    --muted: 210 10% 90%;
+    --muted-foreground: 215 15% 45%;
+    --accent: 210 10% 80%;
+    --accent-foreground: 220 20% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 210 15% 85%;
+    --input: 210 15% 85%;
+    --ring: 215 30% 45%;
+    --radius: 0.5rem;
+
+    --info: 210 90% 50%;
+    --success: 142 70% 45%;
+    --warning: 38 92% 50%;
+    
+    --blue: 217 91% 60%;
+    --green: 142 71% 45%;
+    --red: 0 84% 60%;
+    --yellow: 48 96% 53%;
+    --purple: 262 83% 58%;
+    --orange: 24 95% 53%;
+    --teal: 173 80% 40%;
+  }
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 210 15% 95%;
+    --card: 220 15% 10%;
+    --card-foreground: 210 15% 95%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 210 15% 95%;
+    --primary: 217 32% 60%;
+    --primary-foreground: 220 15% 8%;
+    --secondary: 220 10% 15%;
+    --secondary-foreground: 210 15% 95%;
+    --muted: 220 10% 18%;
+    --muted-foreground: 215 10% 65%;
+    --accent: 210 10% 75%;
+    --accent-foreground: 220 15% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 15% 95%;
+    --border: 220 10% 18%;
+    --input: 220 10% 18%;
+    --ring: 217 32% 60%;
+
+    --info: 210 80% 60%;
+    --success: 142 60% 55%;
+    --warning: 38 80% 60%;
+
+    --blue: 217 80% 65%;
+    --green: 142 60% 55%;
+    --red: 0 70% 60%;
+    --yellow: 48 80% 60%;
+    --purple: 262 70% 65%;
+    --orange: 24 80% 60%;
+    --teal: 173 70% 50%;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}

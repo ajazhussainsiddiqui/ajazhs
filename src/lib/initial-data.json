@@ -1,0 +1,18 @@
+{
+    "pages": [
+        {
+            "id": "home",
+            "title": "Welcome",
+            "layout": "single",
+            "order": 0,
+            "blocks": [
+              {
+                "id": "block-1",
+                "type": "text",
+                "order": 1,
+                "content": "# Welcome to my Portfolio\n\nThis is my personal portfolio, created with a flexible block-based content system. You can create content using a flexible block system including text, and spacers. This powerful feature allows for dynamic and versatile page layouts, all managed through a simple data structure.\n\n## Markdown Rendering\n\nThe system can render markdown content from Firestore, supporting various elements like:\n\n- Lists of items\n- **Bold** and *italic* text for emphasis\n- `inline_code()` snippets for technical details\n- [Hyperlinks](https://firebase.google.com) to external resources\n- Images from a URL like this one: ![A random image from Unsplash](https://source.unsplash.com/random/800x600)\n\n### GitHub Flavored Markdown\n\nEnjoy extended syntax like tables, strikethrough, and more.\n\n| Feature             | Supported |\n| ------------------- | :-------: |\n| HTML in Markdown    |    Yes    |\n| GFM Tables          |    Yes    |\n| Responsive Layouts  |    Yes    |"
+              }
+            ]
+        }
+    ]
+}
