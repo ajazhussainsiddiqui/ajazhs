@@ -25,11 +25,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ajazhs.vercel.app'),
   title: {
-    default: 'Ajaz Hussain Siddiqui | AI & Machine Learning Engineer',
+    default: 'Ajaz Hussain Siddiqui',
     template: '%s | Ajaz Hussain Siddiqui'
   },
-  description: 'Personal portfolio of Ajaz Hussain Siddiqui, specializing in Artificial Intelligence and Machine Learning. Explore my latest projects and about my expertise.',
-  keywords: ['Ajaz Hussain Siddiqui', 'AI Specialist', 'Machine Learning Engineer', 'Portfolio', 'Software Developer', 'Artificial Intelligence', 'Data Science', 'Deep Learning', 'NLP', 'Computer Vision', 'AI Agents', 'AI Researcher', 'AI Developer'],
+  description: 'Personal portfolio of Ajaz Hussain Siddiqui, Artificial Intelligence and Machine Learning Engineer. Here you can explore my latest projects and other information about me and my work.',
+  keywords: ['Ajaz Hussain Siddiqui', 'AI Engineer', 'Machine Learning Engineer', 'Portfolio', 'Software Developer', 'Artificial Intelligence', 'Data Science', 'Deep Learning', 'NLP', 'Computer Vision', 'AI Agents', 'AI Researcher', 'AI Developer', 'ML Engineer', 'AI Projects', 'AI Innovations', 'LLMs', "Ajaz projects", "Ajaz AI/ML work"],
   authors: [{ name: 'Ajaz Hussain Siddiqui' }],
   creator: 'Ajaz Hussain Siddiqui',
   openGraph: {
