@@ -1,5 +1,7 @@
 # The Vibe-Coded Portfolio 
 
+![screenshot](https://qvpcvxxhwlglgabzgpuq.supabase.co/storage/v1/object/public/media/uploads/0.46400543911809156.png)
+
 This isn't a standard hard-coded portfolio template. I built this project because I wanted a website that feels alive—where I can design, write, and restructure content in **real-time**, without touching a line of code (in codebase) after deploy.
 
 I "vibe coded" this. I leveraged AI and intuition to build a system that prioritizes **creative freedom** over rigid structure. It was built out of curiosity: *Could I make a portfolio where the Edit Mode is just the Live Site with full freedom?*
@@ -56,5 +58,6 @@ I built an messanging feature right into the header. Visitors send messages, and
 This portfolio is a living thing. It changes when I change.  
 Thanks for stopping by 🤍
 
----
-*Built with curiosity and a lot of LLM prompting.*
+
+>*Built with curiosity and a lot of LLM prompting.*  
+[Check out](https://ajazhs.vercel.app/)
