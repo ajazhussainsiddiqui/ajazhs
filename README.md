@@ -50,7 +50,7 @@ I built an messanging feature right into the header. Visitors send messages, and
 ## The Tech Stack
 * **Framework:** [Next.js](https://nextjs.org/)
 * **Database:** [Firebase Firestore](https://firebase.google.com/) (Real-time updates)
-* **Authentication:** [Supabase](https://supabase.com/) (Secure, simple login)
+* **Authentication:** [Firebase](https://firebase.google.com/) (simple login)
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 * **Deployment:** [Vercel](https://vercel.com/)
 
